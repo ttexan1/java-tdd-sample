@@ -1,0 +1,15 @@
+{
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        "match": "\\.java$",
+        "cmd": "google-java-format --replace ${file}"
+      },
+    ],
+  },
+  "files.exclude":{
+    "**/.classpath": false,
+  }
+}
