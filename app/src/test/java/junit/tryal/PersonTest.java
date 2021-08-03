@@ -14,4 +14,15 @@ public class PersonTest {
     assertEquals(personName, p.getName());
     assertEquals(personAge, p.getAge());
   }
+
+  @Test
+  public void testConstants() {
+    assertEquals(Person.MINIMUM_AGE, 1);
+    assertEquals(Person.MAXIMUM_AGE, 200);
+  }
+
+  @Test(expected = AgeBelowMinimumException.class)
+  public void testConstructorThrowsExceptionWhereAgeBelowMinimum() {
+    Person p = new Person(personName, Person.MINIMUM_AGE - 1);
+  }
 }

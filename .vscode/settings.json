@@ -1,6 +1,7 @@
 {
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
+  "editor.minimap.enabled": false,
   "emeraldwalk.runonsave": {
     "commands": [
       {
